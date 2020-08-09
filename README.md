@@ -26,6 +26,10 @@ Equations :
 * CS_VIDEO = A15 & A13
 * CS_ROM = A15 & A14
 
+About video mapping - future feature - it look like :
+
+![Video Memory mapping](images/video_memory_mapping.png)
+
 * CS_CHAR = CS_VIDEO & !A12 & !A11
 * CS_INDEX = CS_VIDEO & !A12 & A11
 * CS_COLOR = CS_VIDEO & A12 & !A11
