@@ -8,7 +8,9 @@ This repository is about 6502 single board computer. It contains :
 * IO (VIA) - WD65C22
 * SERIAL (ACIA) - WD65C51
 
-*I would like to thinks the 6502 team for the amazing job they did, and all people that hobby possible.*
+*I would like to thinks the 6502 team for the amazing job they did, and all people that make  this hobby possible.*
+
+
 *In memory of Chuck Paddle.*
 
 ## PCB
@@ -33,4 +35,3 @@ About video mapping - future feature - it look like :
 * CS_CHAR = CS_VIDEO & !A12 & !A11
 * CS_INDEX = CS_VIDEO & !A12 & A11
 * CS_COLOR = CS_VIDEO & A12 & !A11
-
