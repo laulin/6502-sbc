@@ -1,0 +1,83 @@
+%SIGNAL
+PIN   6 =  A10_PIN 
+PIN   7 =  A11_PIN 
+PIN   8 =  A12_PIN 
+PIN   9 =  A13_PIN 
+PIN  10 =  A14_PIN 
+PIN  11 =  A15_PIN 
+PIN   2 =  A6_PIN 
+PIN   3 =  A7_PIN 
+PIN   4 =  A8_PIN 
+PIN   5 =  A9_PIN 
+PIN  16 = !CS_ACIA 
+PIN  19 = !CS_CHAR 
+PIN  17 = !CS_COLOR 
+PIN  18 = !CS_INDEX 
+PIN  23 = !CS_IO 
+PIN  21 = !CS_RAM 
+PIN  22 = !CS_ROM 
+PIN  15 = !CS_VIA 
+PIN  20 = !CS_VIDEO 
+PIN  13 =  PHI2_PIN 
+PIN   1 =  VIDEO_EN_PIN 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+CS_ACIA =>
+    !A6_PIN & !A7_PIN & !CS_IO
+
+CS_CHAR =>
+    !A11_PIN & !A12_PIN & !CS_VIDEO
+
+CS_COLOR =>
+    !A11_PIN & A12_PIN & !CS_VIDEO
+
+CS_INDEX =>
+    A11_PIN & !A12_PIN & !CS_VIDEO
+
+CS_IO =>
+    A10_PIN & A11_PIN & A12_PIN & A15_PIN & A8_PIN & A9_PIN
+
+CS_RAM =>
+    CS_CHAR & CS_COLOR & CS_INDEX & CS_IO & CS_ROM & PHI2_PIN
+
+CS_ROM =>
+    A14_PIN & A15_PIN
+
+CS_VIA =>
+    A6_PIN & !A7_PIN & !CS_IO
+
+CS_VIDEO =>
+    A13_PIN & A15_PIN & PHI2_PIN & VIDEO_EN_PIN
+
+CS_ACIA.oe  =>
+    1 
+
+CS_CHAR.oe  =>
+    1 
+
+CS_COLOR.oe  =>
+    1 
+
+CS_INDEX.oe  =>
+    1 
+
+CS_IO.oe  =>
+    1 
+
+CS_RAM.oe  =>
+    1 
+
+CS_ROM.oe  =>
+    1 
+
+CS_VIA.oe  =>
+    1 
+
+CS_VIDEO.oe  =>
+    1 
+
+%END

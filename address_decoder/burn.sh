@@ -1,0 +1,1 @@
+minipro -p ATF22V10B -w ADDR_DECODER.jed

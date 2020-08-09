@@ -1,0 +1,46 @@
+Name     ADDR_DECODER;
+PartNo   00 ;
+Date     04/11/2019 ;
+Revision 01 ;
+Designer Engineer ;
+Company  NA ;
+Assembly None ;
+Location  ;
+Device   P22V10 ;
+
+/* *************** INPUT PINS *********************/
+PIN  1   = VIDEO_EN_PIN ; 
+PIN  2   = A6_PIN ; 
+PIN  3  =  A7_PIN ; 
+PIN  4  =  A8_PIN ; 
+PIN  5  =  A9_PIN ; 
+PIN  6  =  A10_PIN ; 
+PIN  7  =  A11_PIN ; 
+PIN  8  =  A12_PIN ; 
+PIN  9  =  A13_PIN ;
+PIN  10 =  A14_PIN ; 
+PIN  11 =  A15_PIN ; 
+PIN  13 =  PHI2_PIN ;
+
+/* *************** OUTPUT PINS *********************/
+PIN  23   =  !CS_IO; 
+PIN  22   =  !CS_ROM; 
+PIN  21   =  !CS_RAM; 
+PIN  20   =  !CS_VIDEO; 
+PIN  19   =  !CS_CHAR; 
+PIN  18   =  !CS_INDEX; 
+PIN  17   =  !CS_COLOR;
+PIN  16   =  !CS_ACIA;
+PIN  15   =  !CS_VIA;
+
+/* *************** EQUATIONS *********************/
+
+CS_ROM = A15_PIN & A14_PIN;
+CS_VIDEO = A15_PIN  & A13_PIN & VIDEO_EN_PIN & PHI2_PIN;
+CS_IO = A15_PIN & A12_PIN & A11_PIN & A10_PIN & A9_PIN & A8_PIN;
+CS_CHAR = CS_VIDEO & !A12_PIN & !A11_PIN;
+CS_INDEX = CS_VIDEO & !A12_PIN & A11_PIN;
+CS_COLOR = CS_VIDEO & A12_PIN & !A11_PIN;
+CS_RAM = !CS_ROM & !CS_IO & !CS_CHAR & !CS_INDEX & !CS_COLOR & PHI2_PIN;
+CS_ACIA = CS_IO & !A7_PIN & !A6_PIN;
+CS_VIA = CS_IO & !A7_PIN & A6_PIN;

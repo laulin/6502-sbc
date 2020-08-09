@@ -1,0 +1,222 @@
+{COMPONENT C:\WINCUPL\WINCUPL\ADDR_DECODER.SYM
+
+ {ENVIRONMENT
+  {PDIFvrev 3.00}
+  {Program "CUPL(WM) Version 5.0a"}
+  {DBtype "Schematic"}
+  {DBvrev 1.01}
+  {DBtime "Fri Feb 21 20:44:57 2020 "}
+  {DBunit "MIL"}
+  {DBgrid 10}
+  {Lyrstr "WIRES" 1 "BUS" 1 "GATE" 2 "IEEE" 2 "PINFUN" 3 "PINNUM" 1 
+          "PINNAM" 6 "PINCON" 4 "REFDES" 2 "ATTR" 6 "SDOT" 1 
+          "DEVICE" 5 "OUTLIN" 5 "ATTR2" 6 "NOTES" 6 "NETNAM" 4 
+          "CMPNAM" 5 "BORDER" 5}
+ }
+
+ {USER
+  {VIEW
+   {Mode SYMB}
+   {Nlst OPEN}
+   {Vw 0 0 2}
+   {Lv 12 2 2 2 0 0 2 2 2 2 0 0 2 1 2 0 0 0 0}
+   {Gs 10 10}
+  }
+ }
+
+ {DISPLAY
+  [Ly "PINNUM"]
+  [Ls "SOLID"][Wd 0]
+  [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+ }
+
+ {SYMBOL
+  {PIN_DEF
+   [Ly "PINCON"]
+   {P VIDEO_EN {Pt "INPUT"}{Lq 0}{Ploc 100 260}}
+   {P A6_PIN {Pt "INPUT"}{Lq 0}{Ploc 100 220}}
+   {P A7_PIN {Pt "INPUT"}{Lq 0}{Ploc 100 200}}
+   {P A8_PIN {Pt "INPUT"}{Lq 0}{Ploc 100 180}}
+   {P A9_PIN {Pt "INPUT"}{Lq 0}{Ploc 100 160}}
+   {P A10_PIN {Pt "INPUT"}{Lq 0}{Ploc 100 140}}
+   {P A11_PIN {Pt "INPUT"}{Lq 0}{Ploc 100 120}}
+   {P A12_PIN {Pt "INPUT"}{Lq 0}{Ploc 100 100}}
+   {P A13_PIN {Pt "INPUT"}{Lq 0}{Ploc 100 80}}
+   {P A14_PIN {Pt "INPUT"}{Lq 0}{Ploc 100 60}}
+   {P A15_PIN {Pt "INPUT"}{Lq 0}{Ploc 100 40}}
+   {P PHI2_PIN {Pt "INPUT"}{Lq 0}{Ploc 100 20}}
+   {P CS_VIA' {Pt "I/O"}{Lq 0}{Ploc 360 20}}
+   {P CS_ACIA' {Pt "I/O"}{Lq 0}{Ploc 360 40}}
+   {P CS_COLOR' {Pt "I/O"}{Lq 0}{Ploc 360 60}}
+   {P CS_INDEX' {Pt "I/O"}{Lq 0}{Ploc 360 80}}
+   {P CS_CHAR' {Pt "I/O"}{Lq 0}{Ploc 360 100}}
+   {P CS_VIDEO' {Pt "I/O"}{Lq 0}{Ploc 360 120}}
+   {P CS_RAM' {Pt "I/O"}{Lq 0}{Ploc 360 140}}
+   {P CS_ROM' {Pt "I/O"}{Lq 0}{Ploc 360 160}}
+   {P CS_IO' {Pt "I/O"}{Lq 0}{Ploc 360 180}}
+  }
+
+  {PKG
+   [Ly "REFDES"]
+   [Ts 25][Tj "CB"][Tr 0][Tm "N"]
+   {Rdl 230 290}
+
+   [Ly "PINNUM"]
+   [Ts 15][Tj "RC"]
+   {Pnl 120 270}
+   [Ts 15][Tj "RC"]
+   {Pnl 120 230}
+   {Pnl 120 210}
+   {Pnl 120 190}
+   {Pnl 120 170}
+   {Pnl 120 150}
+   {Pnl 120 130}
+   {Pnl 120 110}
+   {Pnl 120 90}
+   {Pnl 120 70}
+   {Pnl 120 50}
+   {Pnl 120 30}
+   [Ts 15][Tj "LC"]
+   {Pnl 340 30}
+   {Pnl 340 50}
+   {Pnl 340 70}
+   {Pnl 340 90}
+   {Pnl 340 110}
+   {Pnl 340 130}
+   {Pnl 340 150}
+   {Pnl 340 170}
+   {Pnl 340 190}
+
+   {Sd A 1 2 3 4 5 6 7 8 9 10 11 13 15 16 17 18 19 20 21 22 23}
+  }
+
+  {PIC
+   [Ly "GATE"]
+   [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+   {R 130 280 330 0}
+   {L 130 260 100 260}
+   {L 130 270 140 260 130 250}
+   {L 130 220 100 220}
+   {L 130 200 100 200}
+   {L 130 180 100 180}
+   {L 130 160 100 160}
+   {L 130 140 100 140}
+   {L 130 120 100 120}
+   {L 130 100 100 100}
+   {L 130 80 100 80}
+   {L 130 60 100 60}
+   {L 130 40 100 40}
+   {L 130 20 100 20}
+   {C 335 20 5}
+   {L 340 20 360 20}
+   {C 335 40 5}
+   {L 340 40 360 40}
+   {C 335 60 5}
+   {L 340 60 360 60}
+   {C 335 80 5}
+   {L 340 80 360 80}
+   {C 335 100 5}
+   {L 340 100 360 100}
+   {C 335 120 5}
+   {L 340 120 360 120}
+   {C 335 140 5}
+   {L 340 140 360 140}
+   {C 335 160 5}
+   {L 340 160 360 160}
+   {C 335 180 5}
+   {L 340 180 360 180}
+   [Ly "PINNAM"]
+   [Tj "LC"]
+   {T "VIDEO_EN" 140 260}
+   {T "A6_PIN" 140 220}
+   {T "A7_PIN" 140 200}
+   {T "A8_PIN" 140 180}
+   {T "A9_PIN" 140 160}
+   {T "A10_PIN" 140 140}
+   {T "A11_PIN" 140 120}
+   {T "A12_PIN" 140 100}
+   {T "A13_PIN" 140 80}
+   {T "A14_PIN" 140 60}
+   {T "A15_PIN" 140 40}
+   {T "PHI2_PIN" 140 20}
+   [Tj "RC"]
+   {T "CS_VIA'" 320 20}
+   {T "CS_ACIA'" 320 40}
+   {T "CS_COLOR'" 320 60}
+   {T "CS_INDEX'" 320 80}
+   {T "CS_CHAR'" 320 100}
+   {T "CS_VIDEO'" 320 120}
+   {T "CS_RAM'" 320 140}
+   {T "CS_ROM'" 320 160}
+   {T "CS_IO'" 320 180}
+   [Ly "DEVICE"]
+   [Tj "CT"]
+   {T "P22V10" 230 -10}
+  }
+
+  {ATR
+   {IN
+    {Org 100 20}
+    {Ty 255}
+   }
+   {EX
+    [Ly "ATTR2"]
+    [Ts 12][Tj "CT"][Tr 0][Tm "N"]
+    {At PLD C:\WINCUPL\WINCUPL\ADDR_DECODER 230 280}
+   }
+  }
+ }
+
+ {DETAIL
+  {ANNOTATE
+  }
+
+  {NET_DEF
+   {N VIDEO_EN
+   }
+   {N A6_PIN
+   }
+   {N A7_PIN
+   }
+   {N A8_PIN
+   }
+   {N A9_PIN
+   }
+   {N A10_PIN
+   }
+   {N A11_PIN
+   }
+   {N A12_PIN
+   }
+   {N A13_PIN
+   }
+   {N A14_PIN
+   }
+   {N A15_PIN
+   }
+   {N PHI2_PIN
+   }
+   {N CS_VIA'
+   }
+   {N CS_ACIA'
+   }
+   {N CS_COLOR'
+   }
+   {N CS_INDEX'
+   }
+   {N CS_CHAR'
+   }
+   {N CS_VIDEO'
+   }
+   {N CS_RAM'
+   }
+   {N CS_ROM'
+   }
+   {N CS_IO'
+   }
+  }
+
+  {SUBCOMP
+  }
+ }
+}
